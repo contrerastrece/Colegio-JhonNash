@@ -354,6 +354,7 @@ footer p{
 	margin: auto;
 	position: relative;
 	box-sizing: border-box;
+	
 }
 .informacion-contacto{
 	width:40vw;
@@ -378,15 +379,13 @@ footer p{
 }	
 
 .formulario-contacto{
-	margin:1rem 0 1rem 0;
+	margin: 1rem;
   display: inline-block;
   background: white;
   position: relative;
-  height: 80vh;
-  width: 35vw;
+  width:35%;
   margin-left: 0.5rem;
   border-radius: 1rem;
-  overflow: hidden;
   justify-content: center;
   transition:0.5s;
 }
@@ -452,6 +451,7 @@ footer p{
   transition: all 0.2s;
   padding: 0.3rem;
   font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 .formulario-input:focus + .formulario-label,
 .formulario-textarea:focus + .formulario-label{
