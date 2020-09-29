@@ -1,0 +1,468 @@
+body{
+	display: block;
+	margin:auto;
+}
+header{	
+	display: flex;
+	width: 100%;
+	height: 18vh;
+	background: #1569ae;
+	justify-content: space-around;
+	position: sticky;
+	top:0;
+	z-index: 10;
+
+}			
+ul{
+	list-style:none;
+}
+/*-----------------Menu---------*/
+.active{
+	border-radius: 5px;
+	background: #16b7ba;
+}
+.logo img{
+	width: 70%;
+	margin-top: 1rem;
+}
+.nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 10;
+}
+.nav li a {
+	font-family:"Montserrat",sans-serif;
+	color:white;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+	font-size: 18px;
+}
+
+.nav li a:hover {
+	color:#16b7ba;
+	border-radius: 5px;
+}
+
+.nav li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+	background: white;
+}
+
+.nav li:hover > ul {
+	display:block;
+}
+
+.nav li:hover a{
+	color:#2c4d88;
+	
+}
+
+.nav li ul li  {
+	margin: 5px 0 5px -40px;
+}
+
+
+.nav li ul li:hover a{
+	background: #16b7ba;
+	
+}
+.nav li ul li {
+	position:relative;
+
+}
+/*--------------Infografia----------------*/
+
+.infografia{
+	width: 100%;
+	height: 25vh;
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	box-sizing: border-box;
+	grid-gap: 3px;
+}
+.infografia > div{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 25px;
+	box-sizing: border-box;
+
+}
+
+.infografia h2{
+	color:black;
+	font-size: 15px;
+	margin-top:  0;
+	font-family: 'Raleway';
+	font-weight: bolder;
+}
+
+.infografia img{
+	width: 35%;
+	margin-top: 0;
+}
+.img1,.img2,.img3,.img4,.img5{
+	position: relative;
+	background: #ffc300
+}
+
+.img1{
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+.img2{
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+.img3{
+	grid-column: 3/4;
+	grid-row: 1/2;
+}
+.img4{
+	grid-column: 4/5;
+	grid-row: 1/2;
+}
+.img5{
+	grid-column: 5/6;
+	grid-row: 1/2;
+}
+/*--------------Info-COlegio-------------*/
+.Info-Colegio{
+	display: flex;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	background: #003466;
+	justify-content: center;
+}
+.contenido{
+	position: relative;
+	top: 10%;
+	width:  35%;
+	height: 90%;
+	box-sizing: border-box;
+	padding: 20px;
+}
+.contenido p{
+	text-align: justify;
+	font-family: 'Raleway';
+}
+.contenido h2{
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Amiri';
+	margin-bottom: -1rem;
+}
+.contenido img{
+	position: relative;
+	width: 60%;
+	left: 25%;
+	margin-bottom: -2rem;
+}
+/*-------Section--Primaria--Secundaria---------*/
+
+.Portada,.Inicial,.Primaria,.Secundaria{
+position: relative;
+min-width:100%;
+max-width: 	100vw;
+min-height: 100vh;
+overflow: hidden;    
+}
+/*centrando la pta imgen*/
+.Portada img,.Inicial img,.Primaria img,.Secundaria img{
+	position: absolute;
+	left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 	100vw;
+
+}
+.texto{
+	color: white;
+	border-radius:0 100% 100% 0/0 100% 100% 0;
+	box-shadow:79px 10px 5px 0px rgba(0,0,0,0.75);
+	background: #003466;
+	height: 100%;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	position:absolute;
+	box-sizing: border-box;
+	padding: 15% 5%  15% 5%;
+}
+.texto h2, .texto p{
+	text-align: justify;
+	font-family: 'Raleway';
+	align-content: center;
+}
+.texto h2{
+	font-size: 40px;
+	font-weight: 800;
+}
+/*----------------ADMISION------------------*/
+.admision{
+	position: relative;
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+	align-items: center;
+	background: #003466;
+	
+}
+.admision form{
+	box-sizing: border-box;
+	text-align: center;
+	width: 35%;
+	padding: 1rem;
+}
+.admision h2{
+	
+	margin-bottom: 1rem;
+	position: relative;
+	font-family: 'Dosis';
+	color: white;	
+	background: transparent;
+	border:1px solid white;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	width: auto;
+	padding: 0.5rem;
+}
+.admision input,.admision textarea{
+	border-radius:10px;
+	margin-bottom: 1rem;
+	width: 100%;
+	padding: 10px;	
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+.admision textarea{
+	min-height: 100px;
+	max-height: 150px; 
+}
+.admision form label{
+	font-family: 'Dosis';
+	color: white;
+	font-size: 18px;
+
+}
+.admision a input{
+	background: #fdd247;
+}
+/*--------------Footer------------*/
+footer{
+	height: 60vh;
+	width: 100%;
+	background: #00348d;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns:repeat(14, 1fr);
+	padding-top: 5%;
+	grid-gap: 5px;
+	box-sizing: border-box;
+	padding: 2rem 2rem 0 2rem;
+}
+footer  h3, h2, p, a{
+	color: #d5edfb;
+}
+footer a{
+	font-family: 'Dosis',sans-serif;
+	text-decoration: none;
+}
+footer a:hover{
+	color:orange;
+}
+footer h2{
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 20px;
+}
+.informacion,.acceso,.contacto,.redes-sociales{
+	padding-left: 1rem;
+	padding-right: 2rem;
+}
+.informacion{
+	position: relative;
+	box-sizing: border-box;
+	grid-column: 1/6;
+	grid-row: 1fr; 	
+}
+
+.informacion p{
+	text-align: justify;
+	font-size: 16px;
+	margin-left: 3rem;
+	font-weight: 400;
+	margin-right: 3rem;
+}
+.informacion img{
+	margin-top: 1rem;
+	margin-left: 3rem;
+	margin-bottom: 2rem;
+	width: 50%;
+}
+.contacto{
+	grid-column: 6/10;
+	grid-row: 1fr;
+}
+.contacto h3{
+	font-size: 18px;
+	font-weight: 800;
+	font-family: 'Dosis';
+}
+.contacto p{
+	font-size: 16px;
+	font-family: 'Dosis';
+}
+.acceso{
+	grid-column: 10/13;
+	grid-row: 1fr;
+
+}
+.acceso br{
+	margin-bottom:2rem;
+}
+footer p{
+	font-size: 16px;
+	font-family: 'Dosis', sans-serif;
+	margin-bottom: 0;
+}
+.redes-sociales{	
+	grid-column: 13/15;
+	grid-row: 1fr;
+	font-size: 30px;
+
+}
+.redes-sociales a{
+	margin: 5px;
+}
+/*-----------------CONTACTO------------------------*/
+.section-contacto{
+	width: 80vw;
+	display: flex;
+	margin: auto;
+	position: relative;
+	box-sizing: border-box;
+}
+.informacion-contacto{
+	width:40vw;
+
+	box-sizing: border-box;
+	
+}
+.informacion-contacto h2{
+	color: black;
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	margin-bottom: 2.5rem;
+}
+.informacion-contacto h3,
+.informacion-contacto p,
+.informacion-contacto label{
+	color: black;
+	font-family: 'Dosis', sans-serif;
+	margin-bottom: auto;
+
+}	
+
+.formulario-contacto{
+	margin:1rem 0 1rem 0;
+  display: inline-block;
+  background: white;
+  position: relative;
+  height: 80vh;
+  width: 35vw;
+  margin-left: 0.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  justify-content: center;
+  transition:0.5s;
+}
+.formulario-contacto:hover{
+	box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.titulo-contacto{
+	color: black;
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	margin-bottom: 2.5rem;
+}
+.formulario-label,
+.formulario-input,
+.formulario-submit,
+.formulario-textarea{	
+  display: block;
+  flex-direction: column;
+  font-size: 1rem;
+  width: 90%;
+  box-sizing: border-box;
+  margin: 0 5% 2rem 5%;
+	font-family: 'Dosis', sans-serif;
+}
+
+.formulario-label{
+  position: absolute;
+  color: rgba(0, 0, 0, 0.5);
+  padding-left: 1rem;
+  margin-top: -4rem;
+  transition: all 0.5s;
+}
+
+.formulario-input,
+.formulario-textarea{
+	position: relative;
+  	background: transparent;
+  	border: none;
+  	border-bottom: 1px solid #e7008a;
+  	z-index: 1;
+  	margin: 0rem 1rem 2rem 1rem;
+  	top: -0.5rem;
+}
+
+.formulario-textarea{
+	max-width: 90%;
+  min-width: 90%;
+  min-height: 1.6rem;
+  max-height: 1.6rem;
+  position: relative;
+}
+
+.formulario-submit{
+	color: #e7008a;
+  font-weight: bold;
+  width: 60%;
+  border: 1px solid #e7008a;
+  border-radius: 1rem;
+  margin: -1rem auto;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0.3rem;
+  font-size: 1.3rem;
+}
+.formulario-input:focus + .formulario-label,
+.formulario-textarea:focus + .formulario-label{
+	margin-top: -5.5rem;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.fijar {
+  margin-top: -5.5rem;
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+}
