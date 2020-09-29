@@ -357,8 +357,9 @@ footer p{
 }
 .informacion-contacto{
 	width:40vw;
-
 	box-sizing: border-box;
+	margin-right: auto;
+	padding-left: 5rem;
 	
 }
 .informacion-contacto h2{
@@ -372,7 +373,7 @@ footer p{
 .informacion-contacto label{
 	color: black;
 	font-family: 'Dosis', sans-serif;
-	margin-bottom: auto;
+	margin: auto;
 
 }	
 
